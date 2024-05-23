@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOGIN-FORM</title>
+<title>Sustainable Tourism Agency</title>
+<style>
+  /* murare.css */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+            width: 500px;
+            padding: 33px;
+            background-color: chocolate;
+        }
+  header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  form {
+    margin-top: 20px;
+  }
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  input[type="submit"] {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background: #45a049;
+
+  }
+  .back-btn{
+     width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .back-btn{
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .back-btn:hover{
+    background-color: green;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header> 
+    <h1>Welcome to Our Sustainable Tourism Agency</h1>
+  </header>
+  
+  <!-- Login Form -->
+  <form action="login.php" method="post">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="submit" value="Login">
+    <a href="register.html" class="back-btn">Back to register</a>
+  </form>
+  
+  <!-- Reference Section -->
+  <section>
+    <h2>References</h2>
+    <p>Here you can add references to sustainable tourism practices, articles, and resources.</p>
+  </section>
+</div>
+</body>
+</html>

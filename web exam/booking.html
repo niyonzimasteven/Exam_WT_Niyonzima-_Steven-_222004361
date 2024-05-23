@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            padding: 16px;
+            background-color: yellowgreen;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h3>Booking Form</h3>
+    <div class="container">
+        <form action="booking.php" method="post">
+            <label for="booking_id">Booking ID</label>
+            <input type="text" id="booking_id" name="booking_id" placeholder="Booking ID...">
+            
+            <label for="user_id">User ID</label>
+            <input type="text" id="user_id" name="user_id" placeholder="User ID...">
+            
+            <label for="room_id">Room ID</label>
+            <input type="text" id="room_id" name="room_id" placeholder="Room ID...">
+            
+            <label for="check_in_date">Check-in Date</label>
+            <input type="text" id="check_in_date" name="check_in_date" placeholder="YYYY-MM-DD...">
+            
+            <label for="check_out_date">Check-out Date</label>
+            <input type="text" id="check_out_date" name="check_out_date" placeholder="YYYY-MM-DD...">
+            
+            <label for="num_guests">Number of Guests</label>
+            <input type="text" id="num_guests" name="num_guests" placeholder="Number of guests...">
+            
+            <label for="total_cost">Total Cost</label>
+            <input type="text" id="total_cost" name="total_cost" placeholder="Total cost...">
+            
+            <label for="booking_status">Booking Status</label>
+            <input type="text" id="booking_status" name="booking_status" placeholder="Booking status...">
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

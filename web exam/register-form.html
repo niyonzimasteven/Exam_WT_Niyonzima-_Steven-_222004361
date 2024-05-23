@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form - Sustainable Tourism Agency</title>
+<style>
+  /* Add your CSS styling here */
+  <link rel="stylesheet" href="style.css">
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .container {
+            width: 500px;
+            padding: 33px;
+            background-color: salmon;
+        }
+  header {
+    background: #4CAF50;
+    color: green;
+    padding: 10px 0;
+    text-align: center;
+  }
+  form {
+    margin-top: 20px;
+  }
+  input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+  }
+  input[type="submit"] {
+    background: yellowgreen;
+    color: green;
+    padding: 20px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background: bisque;
+  }
+   .back-btn{
+     width: 100%;
+    padding: 10px;
+    margin: 11px 0;
+  }
+  .back-btn{
+    background-color: green;
+    color: yellow;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  .back-btn:hover{
+    background-color: darkgray;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Register for Sustainable Tourism agency</h1>
+  </header>
+  
+  <!-- Registration Form -->
+  <form action="register.php" method="post">
+    <input type="text" name="fullname" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="submit" value="Register">
+    <select name="user_type">
+      <option value="user">user</option>
+      <option value="admin">admin</option>
+    </select>
+      <p>alread have an account? <a href="./login.html">login now</a></p>
+  </form>
+</div>
+</body>
+</html>

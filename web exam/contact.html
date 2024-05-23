@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sustainable Tourism agency</title>
+    <title>this is your message to what you need</title>
+    <script type="text/javascript">
+        alert("Welcome to sustainable tourism agency, to continue click ok")
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        .container { width: 80%; margin: auto; overflow: hidden; }
+        header { background: #50b3a2; color: white; padding-top: 30px; min-height: 70px; border-bottom: #e8491d 3px solid; }
+        header a { color: #ffffff; text-decoration: none; text-transform: uppercase; font-size: 16px; }
+        header ul { padding: 0; list-style: none; }
+        header li { display: inline; padding: 0 20px 0 20px; }
+        header #branding { float: left; }
+        header #branding h1 { margin: 0; }
+        header nav { float: right; margin-top: 10px; }
+        header .highlight, header .current a { color: #e8491d; font-weight: bold; }
+        header a:hover { color: #ffffff; font-weight: bold; }
+        .contact-form { max-width: 700px; margin: auto; padding: 50px; background: #f4f4f4; border: #e8491d 1px solid; }
+        .contact-form h1, .contact-form p { text-align: center; }
+        .contact-form label { display: block; margin: 10px 0; }
+        .contact-form input[type='text'],
+        .contact-form input[type='email'],
+        .contact-form textarea { width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; }
+        .contact-form button { display: block; width: 100%; padding: 10px; background: #50b3a2; color: white; border: none; cursor: pointer; }
+        .contact-form button:hover { background: #43a1a2; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Sustainable</span> Tourism</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./tours.html">Tours</a></li>
+                    <li class="current"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-form">
+        <h1>Contact Us</h1>
+        <h2>
+        <p>Have questions or want to get in touch? Fill out the form below!</p></h2>
+        <form action="send_message.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+    <div class="container">
+      <p>&copy; 2024 Online tourism agency. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+  // JavaScript for background image slideshow
+  var images = ['image1.jpg', 'janv2.jpg', 'janv4.jpg','image4.jpg']; // Add more image URLs as needed
+  var currentIndex = 0;
+
+  function changeBackground() {
+    document.body.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+    currentIndex = (currentIndex + 1) % images.length;
+    setTimeout(changeBackground, 5000); // Change image every 5 seconds
+  }
+
+  changeBackground(); // Start the slideshow
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert Data Into HTML Table</title>
+<body bgcolor="yellow">
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table, th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+</style>
+</head>
+<body>
+
+<h2>Insert Data Into HTML Table</h2>
+
+<form id="dataForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="eml">Email:</label>
+    <input type="text" id="eml" name="eml"><br><br>
+
+    <label for="Pn">Phone Number:</label>
+    <input type="text" id="Pn" name="Pn"><br><br>
+
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<br>
+<h>Inserted Data</h>
+<table id="dataTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Table body will be populated dynamically -->
+    </tbody>
+</table>
+
+<script>
+    document.getElementById("dataForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get form values
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("eml").value;
+        var phoneNumber = document.getElementById("Pn").value; // Corrected variable name
+        var age = document.getElementById("age").value;
+
+        // Create a new row
+        var newRow = document.createElement("tr");
+
+        // Insert data into the row
+        newRow.innerHTML = "<td>" + name + "</td><td>" + email + "</td><td>" + phoneNumber + "</td><td>" + age + "</td>";
+
+        // Append row to table body
+        document.getElementById("dataTable").getElementsByTagName('tbody')[0].appendChild(newRow);
+
+        // Clear form fields
+        document.getElementById("name").value = "";
+        document.getElementById("eml").value = "";
+        document.getElementById("Pn").value = "";
+        document.getElementById("age").value = "";
+    });
+</script>
+
+</body>
+</html>
